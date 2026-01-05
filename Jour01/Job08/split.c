@@ -29,6 +29,17 @@ i++;
 return (count);
 }
 
+static void free_result(char **result, int count)
+{
+int i = 0;
+
+while (i < count) {
+free(result[i]);
+i++;
+}
+free(result);
+}
+
 char **split(char *str)
 {
 char **result;
@@ -38,6 +49,8 @@ int j = 0;
 int word_len = 0;
 int word_index = 0;
 
+if (str == NULL)
+return (NULL);
 word_count = count_words(str);
 result = malloc(sizeof(char *) * (word_count + 1));
 if (result == NULL)
@@ -48,8 +61,10 @@ word_len++;
 } else {
 if (word_len > 0) {
 result[word_index] = malloc(word_len + 1);
-if (result[word_index] == NULL)
+if (result[word_index] == NULL) {
+free_result(result, word_index);
 return (NULL);
+}
 j = 0;
 while (j < word_len) {
 result[word_index][j] = str[i - word_len + j];
@@ -64,8 +79,10 @@ i++;
 }
 if (word_len > 0) {
 result[word_index] = malloc(word_len + 1);
-if (result[word_index] == NULL)
+if (result[word_index] == NULL) {
+free_result(result, word_index);
 return (NULL);
+}
 j = 0;
 while (j < word_len) {
 result[word_index][j] = str[i - word_len + j];
