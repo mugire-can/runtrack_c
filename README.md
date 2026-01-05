@@ -1,43 +1,69 @@
-# Hello World C++ Project
+# Runtrack C - Day 1
 
-A simple C++ project that prints "Hello World" using vectors and strings.
+A comprehensive C programming project implementing fundamental string manipulation and utility functions.
 
 ## Description
 
-This project demonstrates a basic C++ program that:
-- Uses the `iostream` library for input/output
-- Works with `vector` containers
-- Utilizes `string` objects
-- Implements a simple loop to print messages
+This project is part of the Runtrack C learning series. It implements essential C functions from scratch, including:
+- Character and string output (my_putchar, my_putstr)
+- String utilities (my_strlen, my_strcpy, my_strdup, my_strcmp)
+- Character validation (char_is_digit, str_is_digit)
+- String trimming (trim)
+- String splitting (split)
 
-## Contents
+## Project Structure
 
-- `helloworld` - Main C++ source file with the hello world program
+```
+Jour1/
+├── Job01/
+│   ├── my_putchar.c    - Write a character to stdout using write()
+│   └── my_putstr.c     - Write a string to stdout using my_putchar()
+├── Job02/
+│   └── my_strlen.c     - Get string length
+├── Job03/
+│   ├── char_is_digit.c - Check if character is a digit
+│   └── str_is_digit.c  - Check if string contains only digits
+├── Job04/
+│   └── my_strcpy.c     - Copy source string to destination
+├── Job05/
+│   └── my_strdup.c     - Duplicate string with memory allocation
+├── Job06/
+│   └── my_strcmp.c     - Compare two strings
+├── Job07/
+│   └── trim.c          - Remove leading/trailing whitespace
+└── Job08/
+    └── split.c         - Split string into word array
+```
 
 ## Compilation
 
-```bash
-g++ -o helloworld helloworld
-```
-
-## Running
+To compile individual functions or the entire project:
 
 ```bash
-./helloworld
-```
-
-## Output
-
-```
-Hello C++ World from VS Code and the C++ extension!
+gcc -c Jour1/Job01/my_putchar.c
+gcc -c Jour1/Job01/my_putstr.c
+# etc.
 ```
 
 ## Requirements
 
-- C++ compiler (g++, clang, or MSVC)
-- Standard C++ library
+- C compiler (gcc, clang, or equivalent)
+- POSIX-compliant system (for write() function)
+
+## Learning Objectives
+
+- ➔ C Base Knowledge
+- ➔ String manipulation without standard library functions
+- ➔ Memory management with malloc
+- ➔ Pointer manipulation
+- ➔ Character array processing
+
+## Resources
+
+- https://www.w3schools.com/c/c_getstarted.php
+- https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c
+- https://www.my-mooc.com/fr/mooc/c-programming-getting-started
 
 ## Author
 
 mugire-can
-
