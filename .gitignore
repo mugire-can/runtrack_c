@@ -1,0 +1,27 @@
+# Compiled binaries
+*.o
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+dist/
+
+# Temporary files
+*.tmp
+*.log
