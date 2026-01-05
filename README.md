@@ -14,7 +14,7 @@ This project is part of the Runtrack C learning series. It implements essential 
 ## Project Structure
 
 ```
-Jour1/
+Jour01/
 ├── Job01/
 │   ├── my_putchar.c    - Write a character to stdout using write()
 │   └── my_putstr.c     - Write a string to stdout using my_putchar()
@@ -40,8 +40,8 @@ Jour1/
 To compile individual functions or the entire project:
 
 ```bash
-gcc -c Jour1/Job01/my_putchar.c
-gcc -c Jour1/Job01/my_putstr.c
+gcc -c Jour01/Job01/my_putchar.c
+gcc -c Jour01/Job01/my_putstr.c
 # etc.
 ```
 

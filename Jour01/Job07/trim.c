@@ -19,6 +19,8 @@ int start;
 int end;
 char *dest;
 
+if (src == NULL)
+return (NULL);
 len = my_strlen(src);
 start = 0;
 while (start < len && is_space(src[start]))
