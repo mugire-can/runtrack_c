@@ -25,3 +25,10 @@ dist/
 # Temporary files
 *.tmp
 *.log
+
+# PDF files (for reference only, not part of submissions)
+*.pdf
+
+# macOS specific
+.DS_Store
+Thumbs.db
