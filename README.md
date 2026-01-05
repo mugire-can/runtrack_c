@@ -58,11 +58,6 @@ gcc -c Jour1/Job01/my_putstr.c
 - ➔ Pointer manipulation
 - ➔ Character array processing
 
-## Resources
-
-- https://www.w3schools.com/c/c_getstarted.php
-- https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c
-- https://www.my-mooc.com/fr/mooc/c-programming-getting-started
 
 ## Author
 
