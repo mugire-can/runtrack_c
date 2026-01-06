@@ -1,15 +1,13 @@
-# Runtrack C - Day 1
+# Runtrack C - Days 1 & 2
 
-A comprehensive C programming project implementing fundamental string manipulation and utility functions.
+A comprehensive C programming project implementing fundamental string manipulation, pointer operations, and utility functions across multiple days.
 
 ## Description
 
 This project is part of the Runtrack C learning series. It implements essential C functions from scratch, including:
-- Character and string output (my_putchar, my_putstr)
-- String utilities (my_strlen, my_strcpy, my_strdup, my_strcmp)
-- Character validation (char_is_digit, str_is_digit)
-- String trimming (trim)
-- String splitting (split)
+
+**Day 1:** Character and string output, string utilities, character validation, trimming, and splitting
+**Day 2:** Pointer operations, array manipulation, sorting, functional programming, and complete programs
 
 ## Project Structure
 
@@ -33,6 +31,24 @@ Jour01/
 │   └── trim.c          - Remove leading/trailing whitespace
 └── Job08/
     └── split.c         - Split string into word array
+
+Jour02/
+├── Job01/
+│   └── divide.c        - Divide integer by 2 using pointer
+├── Job02/
+│   └── swap.c          - Swap two integers using pointers
+├── Job03/
+│   └── array_clone.c   - Clone string array (with malloc)
+├── Job04/
+│   └── sort.c          - Bubble sort strings in ASCII order
+├── Job05/
+│   └── func_to_array.c - Apply function to each array element
+├── Job06/
+│   └── delete_str_array.c - Free string array and set to NULL
+├── Job07/
+│   └── job07.c         - Convert command args to lowercase and print
+└── Job08/
+    └── job08.c         - Trim, sort, and display command args
 ```
 
 ## Compilation
@@ -40,9 +56,19 @@ Jour01/
 To compile individual functions or the entire project:
 
 ```bash
+# Jour01 examples
 gcc -c Jour01/Job01/my_putchar.c
 gcc -c Jour01/Job01/my_putstr.c
-# etc.
+
+# Jour02 examples
+gcc -c Jour02/Job01/divide.c
+gcc -c Jour02/Job02/swap.c
+
+# Compile Job07 (requires Jour01 helpers)
+gcc -o job07 Jour02/Job07/job07.c Jour01/Job02/my_strlen.c
+
+# Compile Job08 (requires Jour01 and Jour02 helpers)
+gcc -o job08 Jour02/Job08/job08.c Jour01/Job02/my_strlen.c Jour01/Job07/trim.c Jour01/Job06/my_strcmp.c
 ```
 
 ## Requirements
