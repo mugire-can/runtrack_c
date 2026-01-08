@@ -1,26 +1,38 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-int fib(int n)
+void print_number(int n)
 {
-if (n <= 1)
-return (n);
-return (fib(n - 1) + fib(n - 2));
-}
+char c;
 
-void put_nbr(int n)
-{
 if (n >= 10)
-put_nbr(n / 10);
-write(1, &"0123456789"[n % 10], 1);
+print_number(n / 10);
+c = (n % 10) + 48;
+write(1, &c, 1);
 }
 
 int main(int ac, char **av)
 {
-if (ac == 2)
+int n;
+int a;
+int b;
+int c;
+int i;
+
+if (ac != 2)
+return (0);
+n = atoi(av[1]);
+a = 0;
+b = 1;
+i = 0;
+while (i < n)
 {
-put_nbr(fib(atoi(av[1])));
-write(1, "\n", 1);
+c = a + b;
+a = b;
+b = c;
+i = i + 1;
 }
+print_number(b);
+write(1, "\n", 1);
 return (0);
 }
