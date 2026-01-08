@@ -65,9 +65,9 @@ Jour03/
 ├── Job06/
 │   └── job6.c          - Fibonacci program
 ├── Job07/
-│   └── itoa_hex.c      - Convert integer to hexadecimal (TBD)
+│   └── itoa_hex.c      - Convert integer to hexadecimal (malloc)
 └── Job08/
-    └── sudoku_solver.c - Sudoku solver algorithm (TBD)
+    └── sudoku_solver.c - Sudoku solver algorithm
 ```
 
 ## Compilation
