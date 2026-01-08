@@ -1,29 +1,33 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-int fact(int n)
+void print_number(int n)
 {
-int r = 1;
-int i = 2;
+char c;
 
-while (i <= n)
-r *= i++;
-return (r);
-}
-
-void put_nbr(int n)
-{
 if (n >= 10)
-put_nbr(n / 10);
-write(1, &"0123456789"[n % 10], 1);
+print_number(n / 10);
+c = (n % 10) + 48;
+write(1, &c, 1);
 }
 
 int main(int ac, char **av)
 {
-if (ac == 2)
+int n;
+int result;
+int i;
+
+if (ac != 2)
+return (0);
+n = atoi(av[1]);
+result = 1;
+i = 1;
+while (i <= n)
 {
-put_nbr(fact(atoi(av[1])));
-write(1, "\n", 1);
+result = result * i;
+i = i + 1;
 }
+print_number(result);
+write(1, "\n", 1);
 return (0);
 }
