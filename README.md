@@ -1,6 +1,6 @@
-# Runtrack C - Days 1 & 2
+# Runtrack C - Days 1, 2 & 3
 
-A comprehensive C programming project implementing fundamental string manipulation, pointer operations, and utility functions across multiple days.
+A comprehensive C programming project implementing fundamental string manipulation, pointer operations, arithmetic functions, and utility programs across multiple days.
 
 ## Description
 
@@ -8,6 +8,7 @@ This project is part of the Runtrack C learning series. It implements essential 
 
 **Day 1:** Character and string output, string utilities, character validation, trimming, and splitting
 **Day 2:** Pointer operations, array manipulation, sorting, functional programming, and complete programs
+**Day 3:** String-to-number conversion, mathematical functions, and standalone programs
 
 ## Project Structure
 
@@ -49,6 +50,24 @@ Jour02/
 │   └── job07.c         - Convert command args to lowercase and print
 └── Job08/
     └── job08.c         - Trim, sort, and display command args
+
+Jour03/
+├── Job01/
+│   └── my_atoi.c       - Convert string to integer
+├── Job02/
+│   └── my_itoa.c       - Convert integer to string (malloc)
+├── Job03/
+│   └── power.c         - Calculate base raised to power
+├── Job04/
+│   └── my_sqrt.c       - Calculate square root (integer only)
+├── Job05/
+│   └── job5.c          - Factorial program
+├── Job06/
+│   └── job6.c          - Fibonacci program
+├── Job07/
+│   └── itoa_hex.c      - Convert integer to hexadecimal (TBD)
+└── Job08/
+    └── sudoku_solver.c - Sudoku solver algorithm (TBD)
 ```
 
 ## Compilation
@@ -64,11 +83,19 @@ gcc -c Jour01/Job01/my_putstr.c
 gcc -c Jour02/Job01/divide.c
 gcc -c Jour02/Job02/swap.c
 
-# Compile Job07 (requires Jour01 helpers)
-gcc -o job07 Jour02/Job07/job07.c Jour01/Job02/my_strlen.c
+# Jour03 examples (functions)
+gcc -c Jour03/Job01/my_atoi.c
+gcc -c Jour03/Job02/my_itoa.c
+gcc -c Jour03/Job03/power.c
+gcc -c Jour03/Job04/my_sqrt.c
 
-# Compile Job08 (requires Jour01 and Jour02 helpers)
-gcc -o job08 Jour02/Job08/job08.c Jour01/Job02/my_strlen.c Jour01/Job07/trim.c Jour01/Job06/my_strcmp.c
+# Jour03 programs (standalone)
+gcc -o Jour03/job5.exe Jour03/Job05/job5.c
+gcc -o Jour03/job6.exe Jour03/Job06/job6.c
+
+# Jour03 program execution
+./Jour03/job5.exe 5      # Outputs: 120 (5! factorial)
+./Jour03/job6.exe 6      # Outputs: 8 (6th fibonacci number)
 ```
 
 ## Requirements
