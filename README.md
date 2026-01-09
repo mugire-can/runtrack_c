@@ -72,17 +72,25 @@ Jour03/
 
 Jour04/
 ├── Job01/
-│   └── manhattan.c     - Manhattan distance between two points
+│   └── manhattan.c          - Manhattan distance between two points
 ├── Job02/
-│   └── album.c         - Album struct with metadata
+│   └── album.c              - Album struct with metadata
 ├── Job03/
-│   └── realloc_album.c - Dynamic realloc for album array (malloc)
+│   └── realloc_album.c      - Dynamic realloc for album array (malloc)
 ├── Job04/
+<<<<<<< HEAD
 │   └── create_album.c       - Create new album linked list node
 ├── Job05/
 │   └── push_back_album.c    - Insert album at end of linked list
 ├── Job06/
 │   └── push_front_album.c   - Insert album at beginning of linked list
+=======
+│   └── max_album_year.c     - Find maximum album year in array
+├── Job05/
+│   └── sort_albums.c        - Sort albums by year (bubble sort)
+├── Job06/
+│   └── find_by_artist.c     - Search album by artist name
+>>>>>>> d9cfb8878e29dc86c3980f8446fca3b8bcf693f8
 ├── Job07/
 │   └── (TBD)
 └── Job08/
@@ -120,9 +128,15 @@ gcc -o Jour03/job6.exe Jour03/Job06/job6.c
 gcc -c Jour04/Job01/manhattan.c
 gcc -c Jour04/Job02/album.c
 gcc -c Jour04/Job03/realloc_album.c
+<<<<<<< HEAD
 gcc -c Jour04/Job04/create_album.c
 gcc -c Jour04/Job05/push_back_album.c
 gcc -c Jour04/Job06/push_front_album.c
+=======
+gcc -c Jour04/Job04/max_album_year.c
+gcc -c Jour04/Job05/sort_albums.c
+gcc -c Jour04/Job06/find_by_artist.c
+>>>>>>> d9cfb8878e29dc86c3980f8446fca3b8bcf693f8
 ```
 
 ## Requirements
