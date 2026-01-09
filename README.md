@@ -78,11 +78,11 @@ Jour04/
 ├── Job03/
 │   └── realloc_album.c - Dynamic realloc for album array (malloc)
 ├── Job04/
-│   └── (TBD)
+│   └── create_album.c       - Create new album linked list node
 ├── Job05/
-│   └── (TBD)
+│   └── push_back_album.c    - Insert album at end of linked list
 ├── Job06/
-│   └── (TBD)
+│   └── push_front_album.c   - Insert album at beginning of linked list
 ├── Job07/
 │   └── (TBD)
 └── Job08/
@@ -120,6 +120,9 @@ gcc -o Jour03/job6.exe Jour03/Job06/job6.c
 gcc -c Jour04/Job01/manhattan.c
 gcc -c Jour04/Job02/album.c
 gcc -c Jour04/Job03/realloc_album.c
+gcc -c Jour04/Job04/create_album.c
+gcc -c Jour04/Job05/push_back_album.c
+gcc -c Jour04/Job06/push_front_album.c
 ```
 
 ## Requirements
