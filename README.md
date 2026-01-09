@@ -72,17 +72,17 @@ Jour03/
 
 Jour04/
 ├── Job01/
-│   └── manhattan.c     - Manhattan distance between two points
+│   └── manhattan.c          - Manhattan distance between two points
 ├── Job02/
-│   └── album.c         - Album struct with metadata
+│   └── album.c              - Album struct with metadata
 ├── Job03/
-│   └── realloc_album.c - Dynamic realloc for album array (malloc)
+│   └── realloc_album.c      - Dynamic realloc for album array (malloc)
 ├── Job04/
-│   └── (TBD)
+│   └── max_album_year.c     - Find maximum album year in array
 ├── Job05/
-│   └── (TBD)
+│   └── sort_albums.c        - Sort albums by year (bubble sort)
 ├── Job06/
-│   └── (TBD)
+│   └── find_by_artist.c     - Search album by artist name
 ├── Job07/
 │   └── (TBD)
 └── Job08/
@@ -120,6 +120,9 @@ gcc -o Jour03/job6.exe Jour03/Job06/job6.c
 gcc -c Jour04/Job01/manhattan.c
 gcc -c Jour04/Job02/album.c
 gcc -c Jour04/Job03/realloc_album.c
+gcc -c Jour04/Job04/max_album_year.c
+gcc -c Jour04/Job05/sort_albums.c
+gcc -c Jour04/Job06/find_by_artist.c
 ```
 
 ## Requirements
