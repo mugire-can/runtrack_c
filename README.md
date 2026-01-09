@@ -1,6 +1,6 @@
-# Runtrack C - Days 1, 2 & 3
+# Runtrack C - Days 1, 2, 3 & 4
 
-A comprehensive C programming project implementing fundamental string manipulation, pointer operations, arithmetic functions, and utility programs across multiple days.
+A comprehensive C programming project implementing fundamental string manipulation, pointer operations, arithmetic functions, struct handling, and utility programs across multiple days.
 
 ## Description
 
@@ -9,6 +9,7 @@ This project is part of the Runtrack C learning series. It implements essential 
 **Day 1:** Character and string output, string utilities, character validation, trimming, and splitting
 **Day 2:** Pointer operations, array manipulation, sorting, functional programming, and complete programs
 **Day 3:** String-to-number conversion, mathematical functions, and standalone programs
+**Day 4:** Struct operations, dynamic memory management, and distance calculations
 
 ## Project Structure
 
@@ -68,6 +69,24 @@ Jour03/
 │   └── itoa_hex.c      - Convert integer to hexadecimal (malloc)
 └── Job08/
     └── sudoku_solver.c - Sudoku solver algorithm
+
+Jour04/
+├── Job01/
+│   └── manhattan.c     - Manhattan distance between two points
+├── Job02/
+│   └── album.c         - Album struct with metadata
+├── Job03/
+│   └── realloc_album.c - Dynamic realloc for album array (malloc)
+├── Job04/
+│   └── (TBD)
+├── Job05/
+│   └── (TBD)
+├── Job06/
+│   └── (TBD)
+├── Job07/
+│   └── (TBD)
+└── Job08/
+    └── (TBD)
 ```
 
 ## Compilation
@@ -96,6 +115,11 @@ gcc -o Jour03/job6.exe Jour03/Job06/job6.c
 # Jour03 program execution
 ./Jour03/job5.exe 5      # Outputs: 120 (5! factorial)
 ./Jour03/job6.exe 6      # Outputs: 8 (6th fibonacci number)
+
+# Jour04 examples (functions)
+gcc -c Jour04/Job01/manhattan.c
+gcc -c Jour04/Job02/album.c
+gcc -c Jour04/Job03/realloc_album.c
 ```
 
 ## Requirements
