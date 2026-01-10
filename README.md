@@ -1,6 +1,6 @@
-# Runtrack C - Days 1, 2, 3 & 4
+# Runtrack C - Days 1, 2, 3, 4 & 5
 
-A comprehensive C programming project implementing fundamental string manipulation, pointer operations, arithmetic functions, struct handling, and utility programs across multiple days.
+A comprehensive C programming project implementing fundamental string manipulation, pointer operations, arithmetic functions, struct handling, linked lists, and complete programs with file I/O across multiple days.
 
 ## Description
 
@@ -10,6 +10,7 @@ This project is part of the Runtrack C learning series. It implements essential 
 **Day 2:** Pointer operations, array manipulation, sorting, functional programming, and complete programs
 **Day 3:** String-to-number conversion, mathematical functions, and standalone programs
 **Day 4:** Struct operations, dynamic memory management, and distance calculations
+**Day 5:** File I/O, CSV parsing, linked list management, and sorting with function pointers
 
 ## Project Structure
 
@@ -87,6 +88,16 @@ Jour04/
 │   └── album_del_one.c      - Delete one specific album from list (free)
 └── Job08/
     └── sort_album_by.c      - Sort list using comparison function pointer
+
+Jour05/
+├── src/
+│   ├── main.c               - Main program with argument parsing
+│   ├── parsing.c            - CSV file reading and parsing
+│   ├── sorting.c            - Sort by artist/title/year
+│   └── display.c            - Format output and free memory
+├── Makefile                 - Build rules (all, clean, fclean, run)
+├── music_data.txt           - Sample data file (CSV format)
+└── RT C - J5.pdf            - Project requirements
 ```
 
 ## Compilation
@@ -125,6 +136,18 @@ gcc -c Jour04/Job05/push_back_album.c
 gcc -c Jour04/Job06/push_front_album.c
 gcc -c Jour04/Job07/album_del_one.c
 gcc -c Jour04/Job08/sort_album_by.c
+
+# Jour05 - Complete program with Makefile
+cd Jour05
+make all              # Compile to create 'music' executable
+make run              # Compile and run with sample data
+make clean            # Remove object files
+make fclean           # Remove all build files and executable
+
+# Example usage:
+# ./music music_data.txt artist     # Sort by artist
+# ./music music_data.txt title      # Sort by title
+# ./music music_data.txt year       # Sort by year
 ```
 
 ## Requirements
