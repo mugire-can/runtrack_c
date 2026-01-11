@@ -96,7 +96,6 @@ Jour05/
 │   ├── sorting.c            - Sort by artist/title/year
 │   └── display.c            - Format output and free memory
 ├── Makefile                 - Build rules (all, clean, fclean, run)
-├── music_data.txt           - Sample data file (CSV format)
 └── RT C - J5.pdf            - Project requirements
 ```
 
